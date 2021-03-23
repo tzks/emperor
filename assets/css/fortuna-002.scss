@@ -1,0 +1,13 @@
+*{ box-sizing: border-box; }
+html, body{ margin: 0; }
+.quadruple-wrap{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.quadruple-select{
+  display: flex;
+}
+.w100{
+  width: 100%;
+}

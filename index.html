@@ -2,50 +2,61 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/bulma.min.css">
-  <title>Emperor</title>
+  <title>fortuna</title>
+  <style>
+    *{ box-sizing: border-box!important; }
+    html, body{ margin: 0; }
+    img{
+      margin-bottom: 0;
+      vertical-align: bottom;
+    }
+    .quadruple-wrap{
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .quadruple-select{
+      display: flex;
+      flex-wrap: wrap;
+      background: url("assets/images/fortuna/background.png") 0 0 no-repeat;
+      background-size: cover;
+    }
+    .quadruple-select a{
+      padding: 8px;
+      width: 50%;
+      box-sizing: border-box!important;
+    }
+    .quadruple-select a img{
+      width: 100%;
+    }
+    .w100{
+      width: 100%;
+    }
+    .p8{ padding: 8px; }
+  </style>
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #272727;">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="">
-      <img src="assets/images/logo_emperor.png" alt="emperor" style="height: 28px;width: auto;">
-    </a>
+<div class="quadruple-wrap">
+  <div>
+    <img class="w100" src="assets/images/fortuna/head.png" alt="">
   </div>
-</nav>
-
-<section class="section">
-  <div class="container">
-    <h1 class="title">
-      Hello EMPEROR
-    </h1>
-    <p class="subtitle">
-      CSSとは見た目を変更するものです。
-    </p>
-    <div class="block">
-      <h3>HTMLとは</h3>
-      HTMLとはwebサイトを作る骨組みになるもの<br>
-      マークアップ言語と呼ばれてとっつきやすいものとなっている
-    </div>
-    <div class="block">
-      <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-          <input name="yourid" class="input" type="text" placeholder="あなたの名前は？">
-        </div>
-      </div>
-      <div class="field is-grouped">
-        <div class="control">
-          <button class="button is-link">Submit</button>
-        </div>
+  <div class="quadruple-select">
+    <a href=""><img src="assets/images/fortuna/earth.png" alt=""></a>
+    <a href=""><img src="assets/images/fortuna/life.png" alt=""></a>
+    <a href=""><img src="assets/images/fortuna/color.png" alt=""></a>
+    <a href=""><img src="assets/images/fortuna/justice.png" alt=""></a>
+    <div class="w100">
+      <div><img class="w100" src="assets/images/fortuna/head2.png" alt=""></div>
+      <div>
+        <img class="w100 p8" src="assets/images/fortuna/description.png" alt="">
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<script src="https://unpkg.com/vue@next"></script>
 </body>
 </html>
